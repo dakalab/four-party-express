@@ -1,0 +1,38 @@
+{
+    "name": "Dakalab/FourPartyExpress",
+    "description": "4px api wrapper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hyper Jiang",
+            "email": "hyper@dakalab.com",
+            "homepage": "http://dakalab.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "friendsofphp/php-cs-fixer": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dakalab\\FourPartyExpress\\": "src/FourPartyExpress/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dakalab\\FourPartyExpress\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpunit",
+            "@phpcs"
+        ],
+        "phpunit": "phpunit --color=always --verbose",
+        "phpcs": "php-cs-fixer fix -v --diff --dry-run"
+    }
+}

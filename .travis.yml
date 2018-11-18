@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+
+before_install:
+  - travis_retry composer self-update
+
+install:
+  - composer install
+
+script:
+  - composer phpcs
+  - composer phpunit
+
+after_success:
+  - if [[ $coverage = 'true' ]]; then bash <(curl -s https://codecov.io/bash); fi
