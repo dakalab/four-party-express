@@ -1,15 +1,17 @@
-# FourPartyExpress
+# four-party-express
 
 Unofficial PHP API wrapper for WebService of 4px (http://express.4px.com/)
 
 
-[![Build Status](https://travis-ci.org/dakalab/FourPartyExpress.svg?branch=master)](https://travis-ci.org/dakalab/FourPartyExpress)
-[![codecov](https://codecov.io/gh/dakalab/FourPartyExpress/branch/master/graph/badge.svg)](https://codecov.io/gh/dakalab/FourPartyExpress)
+[![Build Status](https://travis-ci.org/dakalab/four-party-express.svg?branch=master)](https://travis-ci.org/dakalab/four-party-express)
+[![codecov](https://codecov.io/gh/dakalab/four-party-express/branch/master/graph/badge.svg)](https://codecov.io/gh/dakalab/four-party-express)
+[![Total Downloads](https://poser.pugx.org/dakalab/four-party-express/downloads)](https://packagist.org/packages/dakalab/four-party-express)
+[![License](https://poser.pugx.org/dakalab/four-party-express/license.svg)](https://packagist.org/packages/dakalab/four-party-express)
 
 ## Install
 
 ```
-composer require Dakalab/FourPartyExpress
+composer require dakalab/four-party-express
 ```
 
 ## Usage

@@ -8,7 +8,6 @@ notifications:
   email: false
 
 before_install:
-  - export CODECOV_TOKEN="865c79c2-2f6b-4771-b6a5-a77aea6bede1"
   - travis_retry composer self-update
 
 install:
