@@ -1,20 +1,22 @@
 language: php
 
 php:
-  - 5.6
-  - 7.0
   - 7.1
   - 7.2
 
+notifications:
+  email: false
+
 before_install:
+  - export CODECOV_TOKEN="865c79c2-2f6b-4771-b6a5-a77aea6bede1"
   - travis_retry composer self-update
 
 install:
-  - composer install
+  - travis_retry composer install
 
 script:
   - composer phpcs
   - composer phpunit
 
 after_success:
-  - if [[ $coverage = 'true' ]]; then bash <(curl -s https://codecov.io/bash); fi
+  - bash <(curl -s https://codecov.io/bash)
